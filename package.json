@@ -1,0 +1,19 @@
+{
+  "name": "oc-css-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agrael88/OC-css-animation.git"
+  },
+  "author": "Brice DUGELAY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agrael88/OC-css-animation/issues"
+  },
+  "homepage": "https://github.com/Agrael88/OC-css-animation#readme"
+}
