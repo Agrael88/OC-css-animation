@@ -1,0 +1,17 @@
+.btn {
+  &__1 {
+    &:active + .ball{
+        transform: scale(1.4);
+    }
+  }
+}
+.ball {
+  margin: 25px;
+  width: $ball-size;
+  height: $ball-size;
+  background: $cd-secondary;
+  margin-bottom: 1rem;
+  border-radius: $ball-size * 0.5;
+  transform: scale(0.1);
+  transition: transform 3000ms;
+}

@@ -1,0 +1,30 @@
+.btn {
+    &__2 {
+        &:active {
+            & + .progress {
+                & > .progress__bar {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $cd-primary;
+    width: 600px;
+    height: 20px;
+    padding: 5px;
+    &__bar {
+        width: 600px;
+        height: 20px;
+        background-color: $cd-secondary;
+        transform-origin: 0% 50%;
+        transform: scaleX(0);
+        transition: transform 2000ms cubic-bezier(.16,0,.16,.99);
+    }
+}
+

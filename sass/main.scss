@@ -1,34 +1,4 @@
-body .container {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
-
-$cd-primary: #9702edbb;
-$cd-secondary: #3d48e270;
-$ball-size: 300px;
-
-.btn {
-  margin: 50px;
-  background: $cd-primary;
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 1.85rem 3rem;
-  border-radius: 10rem;
-  &:active + .ball{
-      transform: scale(1.0);
-  }
-}
-.ball {
-  margin: 50px;
-  width: $ball-size;
-  height: $ball-size;
-  background: $cd-secondary;
-  margin-bottom: 1rem;
-  border-radius: $ball-size * 0.5;
-  transform: scale(0.1);
-  transition: transform 4000ms;
-}
+@import "utils/variable";
+@import "utils/body";
+@import "exercices/ex1";
+@import "exercices/ex2";
