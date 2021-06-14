@@ -1,25 +1,32 @@
-.container {
-  background-color: #edf6f7;
+body .container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 
-.form__group input {
-  border: 2px solid #fff;
-  border-radius: 100rem;
-  color: #6300a0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  outline: none;
-  padding: 0.5rem 1.5rem;
-  width: 90%;
-  transition: background 500ms;
+.btn {
+  margin: 50px;
+  background: #9702edbb;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
 }
-.form__group input:focus {
-  border: 2px solid #6300a0;
+.btn:active + .ball {
+  transform: scale(1);
 }
-.form__group input:not(:focus):invalid {
-  background: #b20a37;
-  border: 2px solid #b20a37;
-  color: #fff;
+
+.ball {
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  background: #3d48e270;
+  margin-bottom: 1rem;
+  border-radius: 150px;
+  transform: scale(0.1);
+  transition: transform 4000ms;
 }
 
 /*# sourceMappingURL=style.css.map */
