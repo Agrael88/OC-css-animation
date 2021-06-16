@@ -1,9 +1,30 @@
+@keyframes progress-bar {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
 .btn {
     &__2 {
         &:active {
             & + .progress {
                 & > .progress__bar {
-                    transform: scaleX(1);
+                    animation: progress-bar 1000ms 150ms;
                 }
             }
         }
@@ -22,6 +43,7 @@
         width: 600px;
         height: 20px;
         background-color: $cd-secondary;
+        opacity: 0;
         transform-origin: left;
         transform: scaleX(0);
         transition: transform 2000ms cubic-bezier(.16,0,.16,.99);
