@@ -1,0 +1,23 @@
+.btn__3 {
+    color: white;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        border-radius: 5rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: radial-gradient(circle, lighten($cd-primary, 10) 0%, darken($cd-primary, 20) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}

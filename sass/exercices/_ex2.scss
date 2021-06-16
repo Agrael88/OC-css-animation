@@ -22,7 +22,7 @@
         width: 600px;
         height: 20px;
         background-color: $cd-secondary;
-        transform-origin: 0% 50%;
+        transform-origin: left;
         transform: scaleX(0);
         transition: transform 2000ms cubic-bezier(.16,0,.16,.99);
     }
